@@ -1,6 +1,7 @@
 import express, { Express } from "express";
 import * as database from "./config/database";
 import dotenv from "dotenv";
+import path from "path";
 
 import clientRouters from "./router/client/index.router";
 
@@ -11,7 +12,7 @@ const port: number | string = process.env.PORT || 3000;
 
 // database.connect();
 
-app.set("views", "./views");
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
 clientRouters(app);
