@@ -9,7 +9,7 @@ dotenv.config();
 const app: Express = express();
 const port: number | string = process.env.PORT || 3000;
 
-database.connect();
+// database.connect();
 
 app.set("views", "./views");
 app.set("view engine", "pug");

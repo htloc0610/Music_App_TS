@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import Topic from "../../models/topic";
 
 export const renderTopicPage = async (
   req: Request,
