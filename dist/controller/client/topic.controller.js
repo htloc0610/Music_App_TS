@@ -8,15 +8,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.renderTopicPage = void 0;
-const topic_1 = __importDefault(require("../../models/topic"));
 const renderTopicPage = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const topics = topic_1.default.find({ deleted: false });
-    console.log(topics);
     res.render("client/pages/topics/index");
 });
 exports.renderTopicPage = renderTopicPage;
