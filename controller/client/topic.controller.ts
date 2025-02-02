@@ -6,5 +6,6 @@ export const renderTopicPage = async (
   res: Response
 ): Promise<void> => {
   const topics = await Topic.find({ deleted: false });
+
   res.render("client/pages/topics/index", { topics });
 };
