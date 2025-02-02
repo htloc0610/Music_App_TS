@@ -11,6 +11,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.renderTopicPage = void 0;
 const renderTopicPage = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.render("client/pages/topics/index");
+    res.send("ok");
 });
 exports.renderTopicPage = renderTopicPage;
